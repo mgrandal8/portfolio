@@ -2,12 +2,25 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a; /* Azul casi negro */
+  --primary: #2563eb;    /* Azul vibrante */
+  --secondary: #7c3aed;  /* Morado suave */
+  --accent: #06b6d4;     /* Cyan brillante */
+}
+.dark {
+  --background: #020617; /* Azul noche */
+  --foreground: #f8fafc; /* Blanco helado */
+  --primary: #3b82f6;    /* Azul más claro */
+  --secondary: #8b5cf6;  /* Morado pastel */
+  --accent: #22d3ee;     /* Cyan neón */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -15,7 +28,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f5f5f5;
+    --primary: #3b82f6;    /* Azul más claro */
+    --secondary: #8b5cf6;  /* Morado pastel */
   }
 }
 
